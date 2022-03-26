@@ -108,6 +108,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  //tambien se podria resolver con   return numero===10 || numero===5
   if (numero === 10 || numero === 5) {
     return true;
   } else {
@@ -135,6 +136,9 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+
+  // la forma recomendad seria    return Math.floor(numero)===(numero) entonces estamos preguntando si el numero pasado es igual a
+  // ese numero redondeado. entonces si no lo es da false, si es el mimso da true
   if (Number.isInteger(numero)) {
     return true;
   } else {
@@ -153,7 +157,8 @@ function fizzBuzz(numero) {
     return "buzz";
   } else if (numero % 3 === 0) {
     return "fizz";
-  } else return numero;
+  }
+  return numero;
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -170,7 +175,7 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
   }
-  if (num3 > num1 && num3 > num2 && num1 > 0 && num2 > 0 && num3 > 0) {
+  if (num3 > num1 && num3 > num2) {
     num3++;
     return num3;
   }
