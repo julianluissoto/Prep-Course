@@ -87,8 +87,13 @@ function agregarNumeros(numeros) {
   for (i = 0; i < numeros.length; i++) {
     suma = suma + numeros[i];
   }
+
+  // */
+
+  /* do {
+    suma = suma + numeros.pop();
+  } while (numeros.length > 0);*/
   return suma;
-  //
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -234,10 +239,26 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+
   var newArray = [];
   suma = numero;
+  i = 0;
 
-  for (var i = 0; i < 10; i++) {
+  while (i < 10) {
+    if (suma === i) {
+      return "Se interrumpió la ejecución";
+      break;
+    }
+
+    suma = suma + 2;
+
+    i++;
+    newArray.push(suma);
+  }
+  return newArray;
+}
+//resuelto con ciclo For
+/* for (var i = 0; i < 10; i++) {
     suma = suma + 2;
 
     if (suma === i) break;
@@ -250,8 +271,7 @@ function breakStatement(numero) {
     return "Se interrumpió la ejecución";
   } else {
     return newArray;
-  }
-}
+  } */
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
