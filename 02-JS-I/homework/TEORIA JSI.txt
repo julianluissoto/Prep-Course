@@ -1,0 +1,17 @@
+* Variables
+LAS VARIABLES son un espacio de memoria donde se almacena un dato de cualquier tipo.
+
+* Strings
+Un string es tipo de datos del tipo Texto, se expresa a traves de las comillas "string".
+
+* Funciones 
+Las funciones son instrucciones para realizar una accion que devuelven un resultado. por ejemplo 
+sumar A + B para obtener C
+reciben un argumento y devuelven el resultado.
+
+* Declaraciones
+La declaracion IF expresa condiciones que se deben cumplir para poder ejecutar un accion, en caso de que 
+la condicion se cumpla, se ejecuta la accion, de lo contrario no se ejecutara.
+
+*Valores booleanos
+es un tipo de dato  que solo puede tener dos valores: verdadero(true) o falso(false). 
